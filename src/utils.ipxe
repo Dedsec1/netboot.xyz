@@ -14,6 +14,7 @@ item pogostick ${space} Pogostick - Offline Windows Password and Registry Editor
 item supergrub ${space} Super Grub2 Disk
 item sysrcd ${space} SystemRescueCD
 item ubcd ${space} Ultimate Boot CD (UBCD)
+item esxi ${space} VMware ESXI 6.5.0
 item --gap netboot.xyz tools:
 item nbxyz-custom ${space} Set Github username [user: ${github_user}]
 item testdistro ${space} Test Distribution ISO
@@ -109,6 +110,11 @@ goto utils_exit
 :ubcd
 set util_path mirror.sysadminguide.net/ubcd/ubcd537.iso
 set util_file ubcd537.iso
+goto boot_memdisk
+
+:ubcd
+set util_path hetzner:download@download.hetzner.com/bootimages/vmware/VMware-VMvisor-Installer-6.5.0.update01-5969303.x86_64.iso
+set util_file VMware-VMvisor-Installer-6.5.0.update01-5969303.x86_64.iso
 goto boot_memdisk
 
 :boot_memdisk
