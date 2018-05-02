@@ -112,7 +112,7 @@ set util_path mirror.sysadminguide.net/ubcd/ubcd537.iso
 set util_file ubcd537.iso
 goto boot_memdisk
 
-:ubcd
+:esxi
 set util_path hetzner:download@download.hetzner.com/bootimages/vmware/VMware-VMvisor-Installer-6.5.0.update01-5969303.x86_64.iso
 set util_file VMware-VMvisor-Installer-6.5.0.update01-5969303.x86_64.iso
 goto boot_memdisk
